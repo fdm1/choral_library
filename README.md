@@ -29,4 +29,7 @@ npm run dev -- --open
 - https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages
 - https://github.com/JustinyAhin/sveltekit-github-pages
 
+- https://kisaragi-hiu.com/kemdict-sveltekit-sqlite/
+- https://github.com/kisaragi-hiu/demo-sveltekit-sqlite
+
 

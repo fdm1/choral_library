@@ -1,18 +1,8 @@
 # Choral library
 
-https://fdm1.github.io/choral_library
+An attempt to create a lightweight and free sveltekit choral library site. Server will be some free service. Database will be sqlite, either locally stored, or in google drive.
 
-An attempt to create a static choral library site backed on GH pages.
-
-The db will be a sqlite file in the repo, and the site will be built with SvelteKit.
-
-Any CRUD actions will be done via GH actions in the repo, which will update the db file, and commit the changes to it. Alternatively, the db might live somewhere else (like dropbox?). Making this up as I go along
-
-### Deploying to GH pages
-
-```bash
-yarn deploy
-```
+Any CRUD actions on the db will fetch the sqlite file, update it, and replace it where it lives.
 
 ### Developing
 
@@ -23,10 +13,5 @@ yarn run dev
 npm run dev -- --open
 ```
 
-## Building
-
-#### References used to hack this together
-- https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages
-- https://github.com/JustinyAhin/sveltekit-github-pages
-
-
+### References
+- [Auth setup](https://medium.com/@uriser/authentication-in-sveltekit-with-auth-js-7ff505d584c4)

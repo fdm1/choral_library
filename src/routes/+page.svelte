@@ -1,9 +1,13 @@
-<svelte:head>
-	<title>Index page</title>
-</svelte:head>
+<script lang="ts">
+  import { page } from "$app/stores";
 
-<h1>Index header</h1>
+  $: userName = $page.data?.session?.user?.name;
+</script>
 
-<p>
-  Index page
-</p>
+{#if userName}
+  <p> Hello {userName} </p>
+  <a href="/protected">protected route</a>
+  <a href="/auth/signout">sign out</a>
+{:else}
+  <a href="/auth/signin">sign in</a>
+{/if}
